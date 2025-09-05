@@ -1,1 +1,1 @@
-export let SECONDS = 10;
+export let SECONDS = 300; // Type Mintues in Seconds
