@@ -6,6 +6,7 @@
     <ProgressBar
       :currentQuestionIndex="currentQuestionIndex"
       :totalQuestions="questions.length"
+      :isCompleted="completed"
       @timeUp="TimeUp"
     />
 
@@ -20,25 +21,11 @@
         @nextQuestion="nextQuestion"
       />
     </div>
-    <div v-else class="text-center mt-8">
-      <h2 class="text-2xl font-bold mb-4 dark:text-white">
-        {{ $t("quizCompleted") }}
-      </h2>
-      <p class="text-lg dark:text-white">
-        {{
-          $t("yourScore", {
-            score: correctAnswersCount,
-            total: questions.length,
-          })
-        }}
-      </p>
-      <button
-        class="mt-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        @click="() => window.location.reload()"
-      >
-        {{ $t("restartQuiz") }}
-      </button>
-    </div>
+    <QuizComplete
+      v-else
+      :score="correctAnswersCount"
+      :total="questions.length"
+    />
   </div>
 </template>
 <script setup>
@@ -97,7 +84,9 @@ const TimeUp = () => {
   completed.value = true;
 };
 const correctAnswersCount = computed(() => {
-  return questions.value.filter((q) => q.answer !== null).length;
+  return questions.value.filter(
+    (q) => q.answer !== null && q.isCorrect === true
+  ).length;
 });
 </script>
 <style scoped></style>

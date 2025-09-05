@@ -2,6 +2,7 @@ import { defineAsyncComponent } from 'vue'
 export default ({ app }) => {
     app.component('QuizContainer', defineAsyncComponent(() => import('../components/QuizContainer.vue')))
     app.component('QuizItem', defineAsyncComponent(() => import('../components/QuizItem.vue')))
+    app.component('QuizComplete', defineAsyncComponent(() => import('../components/QuizComplete.vue')))
     app.component('ProgressBar', defineAsyncComponent(() => import('../components/ProgressBar.vue')))
     app.component('Badge', defineAsyncComponent(() => import('../components/Badge.vue')))
     app.component('DarkMode', defineAsyncComponent(() => import('../components/darkMode.vue')))

@@ -16,9 +16,14 @@
           })
         }}
       </p>
+
       <p
-        class="mt-2 dark:text-white font-bold"
-        :class="{ 'text-red-500': countDown <= 60 }"
+        v-if="!isCompleted"
+        class="mt-2 font-bold"
+        :class="{
+          'text-red-500 dark:text-red-400': countDown <= 60,
+          'text-gray-800 dark:text-gray-200': countDown > 60,
+        }"
       >
         {{ $t("timeleft") }}: {{ formatTime(countDown) }}
       </p>
@@ -27,6 +32,7 @@
 </template>
 <script setup>
 import { ref, computed, onBeforeUnmount } from "vue";
+import { SECONDS } from "../configs/CountDown";
 const props = defineProps({
   currentQuestionIndex: {
     type: Number,
@@ -36,13 +42,17 @@ const props = defineProps({
     type: Number,
     required: true,
   },
+  isCompleted: {
+    type: Boolean,
+    required: true,
+  },
 });
 const emit = defineEmits(["timeUp"]);
 const progress = computed(() => {
   return ((props.currentQuestionIndex + 1) / props.totalQuestions) * 100;
 });
 
-const countDown = ref(300); // 5 minutes in seconds
+const countDown = ref(SECONDS); // 5 minutes in seconds
 let timer = null;
 
 const formatTime = (seconds) => {

@@ -1,7 +1,7 @@
 <template>
   <div :class="({ dark: isDark }, ' ')">
     <div
-      class="mx-auto mt-8 w-[60%] bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md"
+      class="mx-auto mt-8 w-[85%] lg:w-[60%] bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md"
     >
       <div class="flex gap-5 justify-end items-center">
         <ChangeLanguage />
