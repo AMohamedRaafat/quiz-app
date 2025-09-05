@@ -7,4 +7,5 @@ export default ({ app }) => {
     app.component('Badge', defineAsyncComponent(() => import('../components/Badge.vue')))
     app.component('DarkMode', defineAsyncComponent(() => import('../components/darkMode.vue')))
     app.component('ChangeLanguage', defineAsyncComponent(() => import('../components/changeLanguage.vue')))
+    app.component('ExcelDownload', defineAsyncComponent(() => import('../components/ExcelDownload.vue')))
 }

@@ -10,11 +10,16 @@
       @timeUp="TimeUp"
     />
 
-    <div class="questions-section" v-if="!completed">
+    <div class="questions-section overflow-hidden" v-if="!completed">
       <QuizItem
+        v-motion
+        :initial="{ opacity: 0, x: 1000 }"
+        :enter="{ opacity: 1, x: 0 }"
+        :duration="1200"
         :question="questions[currentQuestionIndex]"
         :submitted="questions[currentQuestionIndex].submitted"
         :isCorrect="questions[currentQuestionIndex].isCorrect"
+        :error="error"
         :currentQuestionIndex="currentQuestionIndex"
         @checkAnswer="checkAnswer"
         @prevQuestion="prevQuestion"
@@ -38,14 +43,17 @@ const quizStore = useQuizStore();
 const { currentQuestionIndex, questions } = storeToRefs(quizStore);
 
 const completed = ref(false);
+const error = ref(false);
 const checkAnswer = (selectedOption) => {
   if (!selectedOption) return;
 
   const currentQuestion = questions.value[currentQuestionIndex.value];
   const isMultipleChoice = currentQuestion.type === "multiple";
   if (isMultipleChoice && selectedOption.length === 1) {
-    alert("Please select more than one option.");
+    error.value = true;
     return;
+  } else {
+    error.value = false;
   }
   const isCorrect = isMultipleChoice
     ? JSON.stringify(selectedOption.sort()) ===

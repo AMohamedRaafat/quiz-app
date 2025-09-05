@@ -14,8 +14,13 @@ This quiz application allows users to test their knowledge through interactive m
 - Progress indicator
 - Responsive design for mobile and desktop
 - Random question order
-- Different difficulty levels
-- Dark/Light theme toggle
+- Allow to Retake after complete
+- Translations Arabic and English (Bouns)
+- Accessible Keyboard Navigation (Bouns)
+- Different difficulty levels (Bouns)
+- Dark/Light theme toggle (Bouns)
+- Export To Excel (Bouns)
+- Transitions (Bouns)
 
 ## Installation
 

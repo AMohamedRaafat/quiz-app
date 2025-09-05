@@ -1,1 +1,1 @@
-export let SECONDS = 300;
+export let SECONDS = 10;

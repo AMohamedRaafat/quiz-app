@@ -14,6 +14,10 @@
     </div>
     <div class="mt-4 space-y-2">
       <p v-if="question.type === 'multiple'">{{ $t("selectMore") }}</p>
+
+      <p class="text-red-500 text-[14px]" v-if="error">
+        {{ $t("PleaseSelectMoreThanOneOption") }}
+      </p>
       <div
         class="flex items-center gap-2 cursor-pointer p-2 rounded"
         v-for="(option, index) in $i18n.locale === 'en-US'
@@ -140,6 +144,10 @@ const props = defineProps({
   currentQuestionIndex: {
     type: Number,
     required: true,
+  },
+  error: {
+    type: Boolean,
+    default: false,
   },
 });
 const emits = defineEmits(["checkAnswer", "prevQuestion", "nextQuestion"]);
