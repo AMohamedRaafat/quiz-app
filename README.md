@@ -7,8 +7,7 @@ A simple quiz application built with JavaScript.
 This quiz application allows users to test their knowledge through interactive multiple-choice questions.
 
 ## Features
-
-- Multiple choice questions with instant feedback
+- Singe, Multiple choice questions with instant feedback
 - Score tracking and final results display
 - Timer for each question
 - Progress indicator
