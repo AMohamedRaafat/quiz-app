@@ -1,7 +1,6 @@
-<script setup></script>
-
 <template>
-  <div class="text-3xl">
-    {{ $t("welcome") }}
-  </div>
+  <div>// Toggle class Dark for dark theme</div>
 </template>
+
+<script setup></script>
+<style scoped></style>
