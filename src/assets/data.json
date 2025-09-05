@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "type": "single",
+        "questionEn": "What is the capital of France?",
+        "questionAr": "ما هي عاصمة فرنسا؟",
+        "optionsEn": [
+            "Berlin",
+            "Madrid",
+            "Paris",
+            "Rome"
+        ],
+        "optionsAr": [
+            "برلين",
+            "مدريد",
+            "باريس",
+            "روما"
+        ],
+        "correctAnswersEn": [
+            "Paris"
+        ],
+        "correctAnswersAr": [
+            "باريس"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "single",
+        "questionEn": "Which company developed the Vue.js framework?",
+        "questionAr": "من هو المطور لإطار العمل Vue.js؟",
+        "optionsEn": [
+            "Google",
+            "Evan You",
+            "Facebook",
+            "Microsoft"
+        ],
+        "optionsAr": [
+            "جوجل",
+            "إيفان يو",
+            "فيسبوك",
+            "مايكروسوفت"
+        ],
+        "correctAnswersEn": [
+            "Evan You"
+        ],
+        "correctAnswersAr": [
+            "إيفان يو"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "multiple",
+        "questionEn": "Which of the following are JavaScript frameworks or libraries?",
+        "questionAr": "أيٌ من التالي يُعتبر من أُطر العمل أو المكتبات الخاصة بجافاسكربت؟",
+        "optionsEn": [
+            "Vue.js",
+            "Laravel",
+            "React",
+            "Django"
+        ],
+        "optionsAr": [
+            "فيو.js",
+            "لارافيل",
+            "ريأكت",
+            "جانغو"
+        ],
+        "correctAnswersEn": [
+            "Vue.js",
+            "React"
+        ],
+        "correctAnswersAr": [
+            "فيو.js",
+            "ريأكت"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "single",
+        "questionEn": "Which HTML tag is used to create a hyperlink?",
+        "questionAr": "أي وسم في HTML يُستخدم لإنشاء رابط تشعبي؟",
+        "optionsEn": [
+            "<link>",
+            "<a>",
+            "<href>",
+            "<url>"
+        ],
+        "optionsAr": [
+            "<link>",
+            "<a>",
+            "<href>",
+            "<url>"
+        ],
+        "correctAnswersEn": [
+            "<a>"
+        ],
+        "correctAnswersAr": [
+            "<a>"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "multiple",
+        "questionEn": "Select all valid JavaScript data types.",
+        "questionAr": "اختر جميع أنواع البيانات الصحيحة في جافاسكربت.",
+        "optionsEn": [
+            "String",
+            "Number",
+            "Float",
+            "Boolean",
+            "Char"
+        ],
+        "optionsAr": [
+            "نص (String)",
+            "رقم (Number)",
+            "فاصلة عائمة (Float)",
+            "قيمة منطقية (Boolean)",
+            "حرف (Char)"
+        ],
+        "correctAnswersEn": [
+            "String",
+            "Number",
+            "Boolean"
+        ],
+        "correctAnswersAr": [
+            "نص (String)",
+            "رقم (Number)",
+            "قيمة منطقية (Boolean)"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "single",
+        "questionEn": "What does CSS stand for?",
+        "questionAr": "ماذا تعني CSS؟",
+        "optionsEn": [
+            "Cascading Style Sheets",
+            "Colorful Style Scripts",
+            "Creative Style Syntax",
+            "Compact Style Sheet"
+        ],
+        "optionsAr": [
+            "أوراق الأنماط المتتالية",
+            "سكربتات الأنماط الملونة",
+            "بناء جملة الأنماط الإبداعية",
+            "ورقة أنماط مضغوطة"
+        ],
+        "correctAnswersEn": [
+            "Cascading Style Sheets"
+        ],
+        "correctAnswersAr": [
+            "أوراق الأنماط المتتالية"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "single",
+        "questionEn": "Which method is used to parse a JSON string into a JavaScript object?",
+        "questionAr": "أي دالة تُستخدم لتحويل نص JSON إلى كائن في جافاسكربت؟",
+        "optionsEn": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "parseJSON()",
+            "JSON.toObject()"
+        ],
+        "optionsAr": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "parseJSON()",
+            "JSON.toObject()"
+        ],
+        "correctAnswersEn": [
+            "JSON.parse()"
+        ],
+        "correctAnswersAr": [
+            "JSON.parse()"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "single",
+        "questionEn": "What is the output of `typeof null` in JavaScript?",
+        "questionAr": "ما هي نتيجة `typeof null` في جافاسكربت؟",
+        "optionsEn": [
+            "null",
+            "undefined",
+            "object",
+            "string"
+        ],
+        "optionsAr": [
+            "null",
+            "undefined",
+            "object",
+            "string"
+        ],
+        "correctAnswersEn": [
+            "object"
+        ],
+        "correctAnswersAr": [
+            "object"
+        ]
+    }
+]

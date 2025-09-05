@@ -1,5 +1,14 @@
 export default {
-    welcome: "مرحبا بك في تطبيق الاختبار",
-    startQuiz: "ابدأ الاختبار",
+    quiz: "اختبار",
     question: "السؤال",
+    of: "من",
+    next: "التالي",
+    checkAnswer: "تحقق",
+    previous: "السابق",
+    questionfrom: "السؤال {index} من {total}",
+    yourScore: "درجتك : {score} من {total}",
+    quizCompleted: "اكتمل الاختبار!",
+    restartQuiz: "إعادة بدء الاختبار",
+    single: "اختيار واحد",
+    multiple: "اختيار متعدد",
 }
