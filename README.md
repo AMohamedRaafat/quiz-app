@@ -21,7 +21,7 @@ This quiz application allows users to test their knowledge through interactive m
 - Dark/Light theme toggle (Bouns)
 - Export To Excel (Bouns)
 - Transitions (Bouns)
-- [Live Preview (Bouns) Click Here](https://AMohamedRaafat.github.io/quiz-app/)
+- [Live Preview (Bouns)](https://AMohamedRaafat.github.io/quiz-app/)
 
 ### Time Spent : 3 Hours
 
