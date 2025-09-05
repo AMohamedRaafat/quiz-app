@@ -17,6 +17,8 @@ export default {
     Medium: "Medium",
     Hard: "Hard",
     PleaseSelectMoreThanOneOption: "Please select more than one option.",
-    exportTo: "Export to"
+    exportTo: "Export to",
+    Result: "Result"
+
 
 }

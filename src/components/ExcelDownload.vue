@@ -70,6 +70,8 @@
 
 <script setup>
 import * as XLSX from "xlsx";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const props = defineProps({
   data: {
     type: Array,
@@ -79,7 +81,8 @@ const props = defineProps({
 const downloadExcel = () => {
   const worksheet = XLSX.utils.json_to_sheet(props.data);
   const workbook = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(workbook, worksheet, "Result");
-  XLSX.writeFile(workbook, "Result.xlsx");
+  worksheet["!cols"] = [{ wch: 10 }];
+  XLSX.utils.book_append_sheet(workbook, worksheet, t("Result"));
+  XLSX.writeFile(workbook, `${t("Result")}.xlsx`);
 };
 </script>
