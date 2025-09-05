@@ -6,6 +6,7 @@
     <ProgressBar
       :currentQuestionIndex="currentQuestionIndex"
       :totalQuestions="questions.length"
+      @timeUp="TimeUp"
     />
 
     <div class="questions-section" v-if="!completed">
@@ -55,13 +56,16 @@ const checkAnswer = (selectedOption) => {
 
   const currentQuestion = questions.value[currentQuestionIndex.value];
   const isMultipleChoice = currentQuestion.type === "multiple";
-
+  if (isMultipleChoice && selectedOption.length === 1) {
+    alert("Please select more than one option.");
+    return;
+  }
   const isCorrect = isMultipleChoice
     ? JSON.stringify(selectedOption.sort()) ===
       JSON.stringify(
         locale.value === "en-US"
-          ? currentQuestion.correctAnswersEn[0].sort()
-          : currentQuestion.correctAnswersAr[0].sort()
+          ? currentQuestion.correctAnswersEn.sort()
+          : currentQuestion.correctAnswersAr.sort()
       )
     : selectedOption ===
       (locale.value === "en-US"
@@ -88,6 +92,9 @@ const nextQuestion = () => {
   } else {
     completed.value = true;
   }
+};
+const TimeUp = () => {
+  completed.value = true;
 };
 const correctAnswersCount = computed(() => {
   return questions.value.filter((q) => q.answer !== null).length;

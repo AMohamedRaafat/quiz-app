@@ -11,4 +11,9 @@ export default {
     restartQuiz: "إعادة بدء الاختبار",
     single: "اختيار واحد",
     multiple: "اختيار متعدد",
+    timeleft: "الوقت المتبقي",
+    selectMore: "حدد أكثر من إجابة واحدة:",
+    Easy: "سهل",
+    Medium: "متوسط",
+    Hard: "صعب",
 }

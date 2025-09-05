@@ -3,11 +3,10 @@
     <div
       class="mx-auto mt-8 w-[60%] bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md"
     >
-      <div class="flex gap-2 justify-end">
+      <div class="flex gap-5 justify-end items-center">
         <ChangeLanguage />
         <DarkMode />
       </div>
-
       <QuizContainer />
     </div>
   </div>

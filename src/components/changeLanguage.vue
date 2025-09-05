@@ -1,7 +1,8 @@
 <template>
   <button
     @click="changeLocale()"
-    class="cursor-pointer mb-4 dark:text-white font-bold p-4 rounded w-[50px] h-[50px] flex items-center"
+    class="cursor-pointer dark:text-white font-bold mb-4"
+    :class="$i18n.locale !== 'ar' ? '-mt-1' : ''"
   >
     {{ $i18n.locale === "en-US" ? "ع" : "EN" }}
   </button>

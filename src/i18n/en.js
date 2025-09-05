@@ -9,5 +9,11 @@ export default {
     yourScore: "Your Score: {score} out of {total}",
     restartQuiz: "Restart Quiz",
     single: "Single Choice",
+    quizCompleted: "Quiz Completed!",
     multiple: "Multiple Choice",
+    timeleft: "Time Left",
+    selectMore: "Select more than one answer:",
+    Easy: "Easy",
+    Medium: "Medium",
+    Hard: "Hard",
 }

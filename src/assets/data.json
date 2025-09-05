@@ -21,7 +21,8 @@
         ],
         "correctAnswersAr": [
             "باريس"
-        ]
+        ],
+        "difficulty": "Easy"
     },
     {
         "id": 2,
@@ -45,7 +46,8 @@
         ],
         "correctAnswersAr": [
             "إيفان يو"
-        ]
+        ],
+        "difficulty": "Medium"
     },
     {
         "id": 3,
@@ -71,7 +73,8 @@
         "correctAnswersAr": [
             "فيو.js",
             "ريأكت"
-        ]
+        ],
+        "difficulty": "Medium"
     },
     {
         "id": 4,
@@ -95,7 +98,8 @@
         ],
         "correctAnswersAr": [
             "<a>"
-        ]
+        ],
+        "difficulty": "Easy"
     },
     {
         "id": 5,
@@ -125,7 +129,8 @@
             "نص (String)",
             "رقم (Number)",
             "قيمة منطقية (Boolean)"
-        ]
+        ],
+        "difficulty": "Medium"
     },
     {
         "id": 6,
@@ -149,7 +154,8 @@
         ],
         "correctAnswersAr": [
             "أوراق الأنماط المتتالية"
-        ]
+        ],
+        "difficulty": "Easy"
     },
     {
         "id": 7,
@@ -173,7 +179,8 @@
         ],
         "correctAnswersAr": [
             "JSON.parse()"
-        ]
+        ],
+        "difficulty": "Medium"
     },
     {
         "id": 8,
@@ -197,6 +204,7 @@
         ],
         "correctAnswersAr": [
             "object"
-        ]
+        ],
+        "difficulty": "Hard"
     }
 ]
