@@ -21,6 +21,8 @@ This quiz application allows users to test their knowledge through interactive m
 - Export To Excel (Bouns)
 - Transitions (Bouns)
 
+### Time Spent : 3 Hours
+
 ## Installation
 
 To get started with this project, follow these steps:
