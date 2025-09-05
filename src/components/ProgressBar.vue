@@ -4,7 +4,7 @@
     <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-600">
       <div
         class="bg-green-300 h-4 rounded-full transition-all duration-500 ease-in-out"
-        :style="{ width: progress + '%' }"
+        :style="{ width: countDown ? progress + '%' : '100%' }"
       ></div>
     </div>
     <div class="flex justify-between">
