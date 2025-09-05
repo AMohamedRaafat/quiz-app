@@ -10,7 +10,7 @@ This quiz application allows users to test their knowledge through interactive m
 
 - Singe, Multiple choice questions with instant feedback
 - Score tracking and final results display
-- Timer for each question
+- Timer for questions. When the remaining time is 60 seconds, the text turns red.
 - Progress indicator
 - Responsive design for mobile and desktop
 - Random question order
