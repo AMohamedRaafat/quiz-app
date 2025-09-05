@@ -7,6 +7,7 @@ A simple quiz application built with JavaScript.
 This quiz application allows users to test their knowledge through interactive multiple-choice questions.
 
 ## Features
+
 - Singe, Multiple choice questions with instant feedback
 - Score tracking and final results display
 - Timer for each question
@@ -20,6 +21,7 @@ This quiz application allows users to test their knowledge through interactive m
 - Dark/Light theme toggle (Bouns)
 - Export To Excel (Bouns)
 - Transitions (Bouns)
+- [Live Preview (Bouns) Click Here](https://AMohamedRaafat.github.io/quiz-app/)
 
 ### Time Spent : 3 Hours
 
@@ -30,7 +32,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/quiz-app.git
+git clone https://github.com/AMohamedRaafat/quiz-app.git
 ```
 
 2. Navigate to the project directory:
