@@ -13,7 +13,7 @@ This quiz application allows users to test their knowledge through interactive m
 - Timer for questions. When the remaining time is 60 seconds, the text turns red.
 - Progress indicator
 - Responsive design for mobile and desktop
-- Random question order
+- Random question order and answers
 - Allow to Retake after complete
 - Translations Arabic and English (Bouns)
 - Accessible Keyboard Navigation (Bouns)
